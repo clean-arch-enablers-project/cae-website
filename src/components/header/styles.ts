@@ -13,7 +13,7 @@ export const Header = styled.header`
   right: 0;
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled.a`
   color: #fff;
   font-size: 24px;
   font-weight: 700;
