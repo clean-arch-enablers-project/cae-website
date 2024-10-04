@@ -27,5 +27,5 @@ export const Links = styled.nav`
 `
 
 export const Block = styled.div`
-  height: 60px;
+  height: 76px;
 `

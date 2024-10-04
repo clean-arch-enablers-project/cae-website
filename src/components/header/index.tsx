@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import { Block, Header, Links, Logo } from "./styles";
-import { AnchorComponent } from "../anchor";
+import { AnchorComponent } from "../anchor";;
 
 export function HeaderComponent() {
   return (
     <Fragment>
       <Header>
-        <Logo href="/">cae</Logo>
+        <Logo href="/">
+          <img src="/logo.png" width="50px" />
+        </Logo>
         <Links>
           <AnchorComponent href="/">Home</AnchorComponent>
           <AnchorComponent href="/docs">Documentation</AnchorComponent>
