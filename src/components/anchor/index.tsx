@@ -7,13 +7,13 @@ type TAnchorInput = {
 }
 
 const Anchor = styled.a`
-  color: #333;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s;
   &:hover {
-    color: #000;
+    color: #f1f1f1;
   }
 `
 
