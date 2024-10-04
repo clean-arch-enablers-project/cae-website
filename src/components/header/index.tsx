@@ -10,7 +10,6 @@ export function HeaderComponent() {
           <img src="/logo.png" width="50px" />
         </Logo>
         <Links>
-          <AnchorComponent href="/">Home</AnchorComponent>
           <AnchorComponent href="/docs">Documentation</AnchorComponent>
           <AnchorComponent href="/community">Community</AnchorComponent>
         </Links>
