@@ -26,18 +26,6 @@ export const Links = styled.nav`
   justify-content: end;
 `
 
-export const Link = styled.a`
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s;
-
-  &:hover {
-    color: #f0f0f0;
-  }
-`
-
 export const Block = styled.div`
   height: 60px;
 `
