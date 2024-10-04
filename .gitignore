@@ -13,6 +13,10 @@
 /.next/
 /out/
 
+# node
+package-lock.json
+yarn.lock
+
 # production
 /build
 
