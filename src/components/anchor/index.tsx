@@ -13,7 +13,7 @@ const Anchor = styled.a`
   text-decoration: none;
   transition: color 0.3s;
   &:hover {
-    color: #f1f1f1;
+    font-weight: 700;
   }
 `
 
