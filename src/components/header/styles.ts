@@ -1,7 +1,6 @@
-import { Fragment } from "react";
 import styled from "styled-components";
 
-const Header = styled.header`
+export const Header = styled.header`
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #333;
@@ -14,20 +13,20 @@ const Header = styled.header`
   right: 0;
 `;
 
-const Logo = styled.h1`
+export const Logo = styled.h1`
   color: #fff;
   font-size: 24px;
   font-weight: 700;
 `;
 
-const Links = styled.nav`
+export const Links = styled.nav`
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: end;
 `
 
-const Link = styled.a`
+export const Link = styled.a`
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -39,22 +38,6 @@ const Link = styled.a`
   }
 `
 
-const Block = styled.div`
+export const Block = styled.div`
   height: 60px;
 `
-
-export function HeaderComponent() {
-  return (
-    <Fragment>
-      <Header>
-        <Logo>cae</Logo>
-        <Links>
-          <Link href="/home">Home</Link>
-          <Link href="/docs">Docs</Link>
-          <Link href="/community">Community</Link>
-        </Links>
-      </Header>
-      <Block />
-    </Fragment>
-  );
-}

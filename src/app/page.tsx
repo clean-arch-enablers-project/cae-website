@@ -1,5 +1,6 @@
 "use client"
 
+
 import { HeaderComponent } from "@/components/header";
 import { Title } from "./page.module";
 
