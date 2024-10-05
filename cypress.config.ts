@@ -6,5 +6,6 @@ export default defineConfig({
       framework: "next",
       bundler: "webpack",
     },
+    specPattern: "tests/**/*.spec.tsx",
   },
 });
