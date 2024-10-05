@@ -1,17 +1,18 @@
 "use client"
 
-
 import { HeaderComponent } from "@/components/header";
-import { Title } from "./page.module";
+import { MainContent, PageWrapper, Title } from "./page.module";
 import { FooterComponent } from "@/components/footer";
 
 export default function Home() {
 
   return (
-    <div>
+    <PageWrapper>
       <HeaderComponent />
-      <Title>Hello World, Cae</Title>
+      <MainContent>
+        <Title>Hello World, CAE</Title>
+      </MainContent>
       <FooterComponent /> 
-    </div>
+    </PageWrapper>
   );
 }
