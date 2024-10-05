@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 type TAnchorInput = {
-  href: string;
-  children: React.ReactNode;
-  className?: string;
+  href: string
+  children: React.ReactNode
+  className?: string
 }
 
 const Anchor = styled.a`
@@ -11,6 +11,7 @@ const Anchor = styled.a`
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  min-width: 80px;
   transition: color 0.3s;
   &:hover {
     font-weight: 700;
@@ -18,5 +19,9 @@ const Anchor = styled.a`
 `
 
 export function AnchorComponent({ href, children, className }: TAnchorInput) {
-  return <Anchor href={href} className={className}>{children}</Anchor>
-} 
+  return (
+    <Anchor href={href} className={className}>
+      {children}
+    </Anchor>
+  )
+}
