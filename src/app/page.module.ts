@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+
+// const dark_mode_is_active: boolean = window.matchMedia('(prefers-color-scheme: dark)').matches ? true : false;
 
 export const PageWrapper = styled.div`
   display: flex;
@@ -6,12 +8,58 @@ export const PageWrapper = styled.div`
   min-height: 100vh;
 `
 
-export const MainContent = styled.div`
+export const Content = styled.div`
   flex-grow: 1;
 `
 
 export const Title = styled.h1`
+  color: #f5f5f5;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
+`
+
+export const TopContent = styled.div`
+  background-color: #171717;
+  padding: 100px 50px 50px 50px;
+  text-align: center;
+  height: 55vh auto;
+`
+
+export const Buttons = styled.div`
+  display: inline-flex;
+  margin-top: 50px;
+  gap: 10px;
+`
+
+export const ButtonGetStarted = styled.a`
+  background-color: #f5f5f5;
+  border: solid 1px black;
+  color: #171717;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    border: solid 1px white;
+    background-color: #111;
+    color: #f5f5f5;
+  }
+`
+
+export const ButtonLearnCae = styled.a`
+  background-color: #f5f5f5;
+  border: solid 1px black;
+  color: #171717;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    border: solid 1px white;
+    background-color: #111;
+    color: #f5f5f5;
+  }
 `
