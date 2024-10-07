@@ -32,23 +32,7 @@ export const Buttons = styled.div`
   gap: 10px;
 `
 
-export const ButtonGetStarted = styled.a`
-  background-color: #f5f5f5;
-  border: solid 1px black;
-  color: #171717;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-  &:hover {
-    border: solid 1px white;
-    background-color: #111;
-    color: #f5f5f5;
-  }
-`
-
-export const ButtonLearnCae = styled.a`
+export const Button = styled.a`
   background-color: #f5f5f5;
   border: solid 1px black;
   color: #171717;
