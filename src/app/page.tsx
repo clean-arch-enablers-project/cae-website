@@ -3,12 +3,11 @@
 import { HeaderComponent } from '@/components/header'
 import {
   Content,
-  ButtonGetStarted,
+  Button,
   PageWrapper,
   Title,
   TopContent,
-  Buttons,
-  ButtonLearnCae
+  Buttons
 } from './page.module'
 import { FooterComponent } from '@/components/footer'
 
@@ -23,8 +22,8 @@ export default function Home() {
             CAE makes clean-architect<br></br>easy.
           </Title>
           <Buttons>
-            <ButtonGetStarted href="/">Get Started</ButtonGetStarted>
-            <ButtonLearnCae href="/">Learn CAE</ButtonLearnCae>
+            <Button href="/">Get Started</Button>
+            <Button href="/">Learn CAE</Button>
           </Buttons>
         </TopContent>
       </Content>
