@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Footer = styled.footer`
-  background-color: #333;
-  color: #fff;
+  border-top: 3px solid #171717;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
   display: flex;
-  padding: 30px;
+  padding: 50px;
   gap: 30px;
 `
 
@@ -16,11 +17,11 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 `
 
 export const Title = styled.h2`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 `
 

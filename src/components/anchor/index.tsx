@@ -12,7 +12,7 @@ const Anchor = styled.a`
   font-weight: 500;
   text-decoration: none;
   min-width: 80px;
-  transition: color 0.3s;
+  transition: 0.3s;
   &:hover {
     font-weight: 700;
   }

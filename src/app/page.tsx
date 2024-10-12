@@ -1,18 +1,27 @@
-"use client"
+'use client'
 
-import { HeaderComponent } from "@/components/header";
-import { MainContent, PageWrapper, Title } from "./page.module";
-import { FooterComponent } from "@/components/footer";
+import { HeaderComponent } from '@/components/header'
+import { Content, PageWrapper, Title, TopContent, Buttons } from './style'
+import { FooterComponent } from '@/components/footer'
+import { ButtonComponent } from '@/components/button'
 
 export default function Home() {
-
   return (
     <PageWrapper>
       <HeaderComponent />
-      <MainContent>
-        <Title>Hello World, CAE</Title>
-      </MainContent>
-      <FooterComponent /> 
+      <Content>
+        <TopContent>
+          <Title>
+            enjoy the best of <br />
+            clean architecture with <span className="cae">c</span>æ.
+          </Title>
+          <Buttons>
+            <ButtonComponent href="/">Get Started</ButtonComponent>
+            <ButtonComponent href="/">Learn CAE</ButtonComponent>
+          </Buttons>
+        </TopContent>
+      </Content>
+      <FooterComponent />
     </PageWrapper>
-  );
+  )
 }
