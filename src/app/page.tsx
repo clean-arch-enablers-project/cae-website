@@ -1,15 +1,9 @@
 'use client'
 
 import { HeaderComponent } from '@/components/header'
-import {
-  Content,
-  Button,
-  PageWrapper,
-  Title,
-  TopContent,
-  Buttons
-} from './page.module'
+import { Content, PageWrapper, Title, TopContent, Buttons } from './page.module'
 import { FooterComponent } from '@/components/footer'
+import { ButtonComponent } from '@/components/button'
 
 export default function Home() {
   return (
@@ -22,8 +16,8 @@ export default function Home() {
             CAE makes clean-architect<br></br>easy.
           </Title>
           <Buttons>
-            <Button href="/">Get Started</Button>
-            <Button href="/">Learn CAE</Button>
+            <ButtonComponent href="/">Get Started</ButtonComponent>
+            <ButtonComponent href="/">Learn CAE</ButtonComponent>
           </Buttons>
         </TopContent>
       </Content>
