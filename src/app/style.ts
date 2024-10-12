@@ -20,10 +20,11 @@ export const Title = styled.h1`
 `
 
 export const TopContent = styled.div`
-  background-color: #171717;
+  background-image: url('/background.jpeg');
+  background-size: cover;
   padding: 100px 50px 50px 50px;
   text-align: center;
-  height: 55vh auto;
+  height: 60vh;
 `
 
 export const Buttons = styled.div`
