@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-// const dark_mode_is_active: boolean = window.matchMedia('(prefers-color-scheme: dark)').matches ? true : false;
-
 export const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
