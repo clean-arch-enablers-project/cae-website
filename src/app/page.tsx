@@ -13,7 +13,7 @@ export default function Home() {
         <TopContent>
           <Title>
             enjoy the best of <br />
-            clean architecture with <span className="cae">c</span>ae.
+            clean architecture with <span className="cae">c</span>æ.
           </Title>
           <Buttons>
             <ButtonComponent href="/">Get Started</ButtonComponent>
