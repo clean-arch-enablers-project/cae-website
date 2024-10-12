@@ -1,7 +1,7 @@
 'use client'
 
 import { HeaderComponent } from '@/components/header'
-import { Content, PageWrapper, Title, TopContent, Buttons } from './page.module'
+import { Content, PageWrapper, Title, TopContent, Buttons } from './style'
 import { FooterComponent } from '@/components/footer'
 import { ButtonComponent } from '@/components/button'
 
