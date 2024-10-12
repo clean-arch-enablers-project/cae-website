@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <PageWrapper>
       <HeaderComponent />
-
       <Content>
         <TopContent>
           <Title>
-            CAE makes clean-architect<br></br>easy.
+            enjoy the best of <br />
+            clean architecture with <span className="cae">c</span>ae.
           </Title>
           <Buttons>
             <ButtonComponent href="/">Get Started</ButtonComponent>
