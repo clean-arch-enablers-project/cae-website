@@ -22,7 +22,7 @@ export const Logo = styled.a`
 `
 
 export const Description = styled.span`
-  font-size: 11px;
+  font-size: 12px;
 `
 
 export const Links = styled.nav`

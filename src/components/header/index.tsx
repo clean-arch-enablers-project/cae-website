@@ -7,7 +7,7 @@ export function HeaderComponent() {
     <Fragment>
       <Header>
         <Logo href="/">
-          <h2>CAE</h2>
+          <h1>CAE</h1>
           <Description>
             Clean <br /> Arch Enablers
           </Description>
