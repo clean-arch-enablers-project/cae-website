@@ -1,13 +1,16 @@
-import { Fragment } from "react";
-import { Block, Header, Links, Logo } from "./styles";
-import { AnchorComponent } from "../anchor";;
+import { Fragment } from 'react'
+import { Block, Description, Header, Links, Logo } from './styles'
+import { AnchorComponent } from '../anchor'
 
 export function HeaderComponent() {
   return (
     <Fragment>
       <Header>
         <Logo href="/">
-          <img src="/logo.png" width="50px" />
+          <h1>CAE</h1>
+          <Description>
+            Clean <br /> Arch Enablers
+          </Description>
         </Logo>
         <Links>
           <AnchorComponent href="/docs">Documentation</AnchorComponent>
@@ -16,5 +19,5 @@ export function HeaderComponent() {
       </Header>
       <Block />
     </Fragment>
-  );
+  )
 }
