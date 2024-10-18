@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Header = styled.header`
   background-color: rgba(0, 0, 0, 0.5);
@@ -11,13 +11,19 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   right: 0;
-`;
+`
 
 export const Logo = styled.a`
   color: #fff;
-  font-size: 24px;
   font-weight: 700;
-`;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`
+
+export const Description = styled.span`
+  font-size: 11px;
+`
 
 export const Links = styled.nav`
   display: flex;
