@@ -1,5 +1,5 @@
 {
   "*.{js,ts,tsx,css}": [
-    "npm run format {staged}"
+    "npm run format"
   ]
 }
