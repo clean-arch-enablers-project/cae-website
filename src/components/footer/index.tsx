@@ -1,5 +1,7 @@
-import { AnchorComponent } from "../anchor";
-import { Column, Footer, Gap, Row, Title } from "./styles";
+'use client'
+
+import { AnchorComponent } from '../anchor'
+import { Column, Footer, Gap, Row, Title } from './styles'
 
 export function FooterComponent() {
   return (
@@ -20,11 +22,15 @@ export function FooterComponent() {
           <Title>Community</Title>
         </Row>
         <Gap />
-        <Column> 
-          <AnchorComponent href="https://github.com/orgs/clean-arch-enablers-project/discussions">Discussions</AnchorComponent>
-          <AnchorComponent href="https://github.com/clean-arch-enablers-project/cae-website">GitHub</AnchorComponent>
+        <Column>
+          <AnchorComponent href="https://github.com/orgs/clean-arch-enablers-project/discussions">
+            Discussions
+          </AnchorComponent>
+          <AnchorComponent href="https://github.com/clean-arch-enablers-project/cae-website">
+            GitHub
+          </AnchorComponent>
         </Column>
       </div>
     </Footer>
-  );
+  )
 }
