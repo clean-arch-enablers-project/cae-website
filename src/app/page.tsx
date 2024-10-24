@@ -16,7 +16,7 @@ export default function Home() {
             clean architecture with CAE.
           </Title>
           <Buttons>
-            <ButtonComponent href="/">Get Started</ButtonComponent>
+            <ButtonComponent href="/docs/install">Get Started</ButtonComponent>
             <ButtonComponent href="/">Learn CAE</ButtonComponent>
           </Buttons>
         </TopContent>
