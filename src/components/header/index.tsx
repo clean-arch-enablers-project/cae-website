@@ -1,3 +1,5 @@
+'use client'
+
 import { Fragment } from 'react'
 import { Block, Description, Header, Links, Logo } from './styles'
 import { AnchorComponent } from '../anchor'
