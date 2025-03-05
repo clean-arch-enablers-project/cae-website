@@ -1,0 +1,51 @@
+<header class="p-5 border-b-1 flex justify-between absolute w-full">
+  <div class="flex gap-1 font-black items-center cursor-pointer" routerLink="/">
+    <span class="text-4xl">CAE</span>
+    <span class="text-xs"
+      >Clean <br />
+      Arch Enablers</span
+    >
+  </div>
+  <div class="flex gap-1 items-center">
+    <button hlmMenuBarItem [brnMenuTriggerFor]="documentation">Documentation</button>
+    <button hlmMenuBarItem [brnMenuTriggerFor]="community">Community</button>
+  </div>
+</header>
+
+<ng-template #documentation>
+  <hlm-menu variant="menubar" class="w-48">
+    <hlm-menu-group>
+      <button hlmMenuItem>
+        Getting Started
+      </button>
+      <button hlmMenuItem>
+        How to Install
+      </button>
+    </hlm-menu-group>
+  </hlm-menu>
+</ng-template>
+
+<ng-template #community>
+  <hlm-menu variant="menubar" class="w-48">
+    <hlm-menu-group>
+      <button hlmMenuItem>
+        Github
+        <hlm-menu-shortcut>
+          <ng-icon hlm name="lucideGithub" size="sm"></ng-icon>
+        </hlm-menu-shortcut>
+      </button>
+      <button hlmMenuItem>
+        Linkedin
+        <hlm-menu-shortcut>
+          <ng-icon hlm name="lucideLinkedin" size="sm"></ng-icon>
+        </hlm-menu-shortcut>
+      </button>
+      
+      <hlm-menu-separator />
+
+      <button hlmMenuItem>
+        About CAE
+      </button>
+    </hlm-menu-group>
+  </hlm-menu>
+</ng-template>
