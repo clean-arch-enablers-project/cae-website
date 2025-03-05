@@ -3,7 +3,7 @@ module.exports = {
 	presets: [require('@spartan-ng/brain/hlm-tailwind-preset')],
 	content: [
 		'./src/**/*.{html,ts}',
-		'./REPLACE_WITH_PATH_TO_YOUR_COMPONENTS_DIRECTORY/**/*.{html,ts}',
+		'./components/**/*.{html,ts}',
 	],
 	theme: {
 		extend: {},
