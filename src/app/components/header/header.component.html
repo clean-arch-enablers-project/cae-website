@@ -1,23 +1,63 @@
-<header class="p-4 border-b-1 flex justify-between absolute w-full">
-  <img src="/logo.svg" routerLink="/" class="cursor-pointer h-12" />
-  <div class="flex gap-1 items-center">
-    <button hlmMenuBarItem [brnMenuTriggerFor]="documentation">Documentation</button>
+<header class="p-4 border-b-1 flex justify-between items-center fixed w-full">
+  <img src="/logo.svg" routerLink="/" class="cursor-pointer h-8 md:h-12" />
+  <div class="flex gap-1 items-center pc-only">
+    <button hlmMenuBarItem [brnMenuTriggerFor]="documentation">
+      Documentation
+    </button>
     <button hlmMenuBarItem [brnMenuTriggerFor]="community">Community</button>
   </div>
+  <div class="mobile-only">
+    <button hlmMenuBarItem [brnMenuTriggerFor]="mobile">
+      <ng-icon hlm name="lucideMenu" variant="outline"></ng-icon>
+    </button>
+  </div>
 </header>
+
+<ng-template #mobile>
+  <hlm-menu variant="menubar" class="w-100">
+    <hlm-menu-group>
+      <button hlmMenuItem>Getting Started</button>
+      <button hlmMenuItem>How to Install</button>
+      <button hlmMenuItem>CAE for Java</button>
+      <button hlmMenuItem disabled>
+        CAE for .NET
+        <hlm-menu-shortcut>
+          <span hlmBadge>soon</span>
+        </hlm-menu-shortcut>
+      </button>
+    </hlm-menu-group>
+    <hlm-menu-separator />
+    <hlm-menu-group>
+      <button hlmMenuItem>
+        Discussions
+        <hlm-menu-shortcut>
+          <ng-icon hlm name="lucideGithub" size="sm"></ng-icon>
+        </hlm-menu-shortcut>
+      </button>
+      <button hlmMenuItem>
+        Github
+        <hlm-menu-shortcut>
+          <ng-icon hlm name="lucideGithub" size="sm"></ng-icon>
+        </hlm-menu-shortcut>
+      </button>
+      <button hlmMenuItem>
+        Linkedin
+        <hlm-menu-shortcut>
+          <ng-icon hlm name="lucideLinkedin" size="sm"></ng-icon>
+        </hlm-menu-shortcut>
+      </button>
+      <hlm-menu-separator />
+      <button hlmMenuItem>About CAE</button>
+    </hlm-menu-group>
+  </hlm-menu>
+</ng-template>
 
 <ng-template #documentation>
   <hlm-menu variant="menubar" class="w-48">
     <hlm-menu-group>
-      <button hlmMenuItem>
-        Getting Started
-      </button>
-      <button hlmMenuItem>
-        How to Install
-      </button>
-      <button hlmMenuItem>
-        CAE for Java
-      </button>
+      <button hlmMenuItem>Getting Started</button>
+      <button hlmMenuItem>How to Install</button>
+      <button hlmMenuItem>CAE for Java</button>
       <button hlmMenuItem disabled>
         CAE for .NET
         <hlm-menu-shortcut>
@@ -49,12 +89,10 @@
           <ng-icon hlm name="lucideLinkedin" size="sm"></ng-icon>
         </hlm-menu-shortcut>
       </button>
-      
+
       <hlm-menu-separator />
 
-      <button hlmMenuItem>
-        About CAE
-      </button>
+      <button hlmMenuItem>About CAE</button>
     </hlm-menu-group>
   </hlm-menu>
 </ng-template>

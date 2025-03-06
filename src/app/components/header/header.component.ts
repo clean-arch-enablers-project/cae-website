@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { lucideGithub, lucideLinkedin } from '@ng-icons/lucide';
+import { lucideGithub, lucideLinkedin, lucideMenu } from '@ng-icons/lucide';
 import { BrnMenuTriggerDirective } from '@spartan-ng/brain/menu';
 import {
   HlmMenuBarItemDirective,
@@ -30,7 +30,7 @@ import { HlmBadgeDirective } from '@spartan-ng/ui-badge-helm';
     HlmBadgeDirective
 ],
   templateUrl: './header.component.html',
-  viewProviders: [provideIcons({ lucideGithub, lucideLinkedin })],
+  viewProviders: [provideIcons({ lucideGithub, lucideLinkedin, lucideMenu })],
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {}
