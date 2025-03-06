@@ -21,6 +21,15 @@
       <button hlmMenuItem>
         How to Install
       </button>
+      <button hlmMenuItem>
+        CAE for Java
+      </button>
+      <button hlmMenuItem disabled>
+        CAE for .NET
+        <hlm-menu-shortcut>
+          <span hlmBadge>soon</span>
+        </hlm-menu-shortcut>
+      </button>
     </hlm-menu-group>
   </hlm-menu>
 </ng-template>
@@ -28,6 +37,12 @@
 <ng-template #community>
   <hlm-menu variant="menubar" class="w-48">
     <hlm-menu-group>
+      <button hlmMenuItem>
+        Discussions
+        <hlm-menu-shortcut>
+          <ng-icon hlm name="lucideGithub" size="sm"></ng-icon>
+        </hlm-menu-shortcut>
+      </button>
       <button hlmMenuItem>
         Github
         <hlm-menu-shortcut>

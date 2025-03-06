@@ -12,6 +12,7 @@ import {
   HlmMenuShortcutComponent,
 } from '@spartan-ng/ui-menu-helm';
 import { HlmIconDirective } from "../../../../libs/ui/ui-icon-helm/src/lib/hlm-icon.directive";
+import { HlmBadgeDirective } from '@spartan-ng/ui-badge-helm';
 
 @Component({
   selector: 'app-header',
@@ -25,7 +26,8 @@ import { HlmIconDirective } from "../../../../libs/ui/ui-icon-helm/src/lib/hlm-i
     HlmMenuSeparatorComponent,
     HlmMenuShortcutComponent,
     HlmIconDirective,
-    NgIcon
+    NgIcon,
+    HlmBadgeDirective
 ],
   templateUrl: './header.component.html',
   viewProviders: [provideIcons({ lucideGithub, lucideLinkedin })],
