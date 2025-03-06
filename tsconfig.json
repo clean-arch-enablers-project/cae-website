@@ -24,6 +24,9 @@
       ],
       "@spartan-ng/ui-badge-helm": [
         ".\\libs/ui/ui-badge-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-button-helm": [
+        ".\\libs/ui/ui-button-helm/src/index.ts"
       ]
     }
   },
