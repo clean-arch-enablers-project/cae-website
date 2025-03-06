@@ -1,4 +1,15 @@
 .img-background {
-    background-image: url("/background.jpeg");
-    background-size: cover;
+  background-image: url("/background.jpeg");
+  background-size: cover;
+}
+
+.home-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    width: 70%;
+  }
 }

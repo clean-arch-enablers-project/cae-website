@@ -10,3 +10,34 @@
     <button hlmBtn variant="outline" class="bg-white">Learn CAE</button>
   </div>
 </div>
+<div class="home-container">
+  <br />
+  <p class="text-2xl font-black">what CAE can do?</p>
+  <br />
+  <hlm-carousel class="w-full max-w-xs h-20">
+    <hlm-carousel-content>
+      @for (item of carrousel; track item) {
+      <hlm-carousel-item>
+        <div class="p-1 flex flex-col gap-5">
+          <div>
+            <p class="font-black">{{ item.title }}</p>
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+          <section hlmCard>
+            <div
+              hlmCardContent
+              class="flex items-center justify-center p-6 aspect-video"
+            >
+              <img [src]="item.imageSrc" />
+          </div>
+          </section>
+        </div>
+      </hlm-carousel-item>
+      }
+    </hlm-carousel-content>
+    <button hlm-carousel-previous></button>
+    <button hlm-carousel-next></button>
+  </hlm-carousel>
+</div>

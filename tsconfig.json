@@ -27,6 +27,9 @@
       ],
       "@spartan-ng/ui-button-helm": [
         ".\\libs/ui/ui-button-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-carousel-helm": [
+        ".\\libs/ui/ui-carousel-helm/src/index.ts"
       ]
     }
   },
